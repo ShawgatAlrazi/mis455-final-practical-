@@ -1,0 +1,35 @@
+body {
+    padding: 20px;
+}
+
+#results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-gap: 10px;
+    justify-content: end;
+}
+
+.card {
+    width: 14rem; /* Adjust the width of the cards */
+    height: 18rem; /* Adjust the height of the cards */
+    overflow: auto; /* Add a scrollbar if the content is too long */
+}
+
+.card-img-top {
+    max-height: 100px; /* Set a maximum height for the images */
+    object-fit: cover; /* Resize the images to cover the area without stretching */
+}
+
+#show-all-button {
+    margin: 20px auto;
+    display: block;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
